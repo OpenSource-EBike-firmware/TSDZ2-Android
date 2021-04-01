@@ -52,7 +52,7 @@ public class TSDZ_Periodic {
 
         this.batteryVoltage = ((data[1] & 255) << 8) + ((data[0] & 255)) / 10;
         this.batteryCurrent = (data[2] & 255) / 5;
-        this.wheelSpeed = ((data[4] & 255) << 8) + ((data[3] & 255)) / 10;
+        this.wheelSpeed = (((data[4] & 255) << 8) + (data[3] & 255)) / 10;
         this.braking = ((data[5] & 255) & 1);
         this.light = (((data[5] & 255) >> 1) & 1);
         this.motorHallSensors = (data[6] & 255);
