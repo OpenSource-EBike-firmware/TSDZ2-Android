@@ -228,7 +228,7 @@ public class FragmentStatus extends Fragment implements View.OnLongClickListener
 
             switch (variable.dataType) {
                 case batteryVoltage:
-                    tv.setText(String.valueOf(periodic.batteryVoltage / 10));
+                    tv.setText(String.valueOf(periodic.batteryVoltage));
                     break;
 
                 case batteryCurrent:
