@@ -235,6 +235,14 @@ public class FragmentStatus extends Fragment implements View.OnLongClickListener
                     tv.setText(String.valueOf(periodic.batteryCurrent));
                     break;
 
+                case batteryResistanceEstimated:
+                    tv.setText(String.valueOf(periodic.batteryResistanceEstimated));
+                    break;
+
+                case motorPower:
+                    tv.setText(String.valueOf(periodic.motorPower));
+                    break;
+
                 case batterySOC:
                     tv.setText(String.valueOf(periodic.batterySOC));
                     break;
@@ -368,7 +376,7 @@ public class FragmentStatus extends Fragment implements View.OnLongClickListener
         periodic.variablesConfig.put(getView().findViewById(R.id.fl32).getId(),
                 new Variable(getView().findViewById(R.id.fl32TV).getId(),
                         getView().findViewById(R.id.fl32ValueTV).getId(),
-                        Variable.DataType.motorCurrent)
+                        Variable.DataType.motorPower)
         );
 
         periodic.variablesConfig.put(getView().findViewById(R.id.fl41).getId(),

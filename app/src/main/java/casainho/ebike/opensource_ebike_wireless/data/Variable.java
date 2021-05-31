@@ -17,25 +17,27 @@ public class Variable {
     public enum DataType {
         batteryVoltage,
         batteryCurrent,
+        batteryResistanceEstimated,
         batterySOC,
         batteryUsedEnergy,
         batteryADCCurrent,
+        motorPower,
         motorCurrent,
         motorTemperature,
         motorSpeed,
-        speed,
-        hallSensors,
+        humanPower,
+        pedalCadence,
         pedalSide,
-        throttle,
-        throttleADC,
-        torqueSensorADC,
         pedalWeight,
         pedalWeightWithOffset,
-        pedalCadence,
+        torqueSensorADC,
+        speed,
+        odometer,
+        throttle,
+        throttleADC,
+        hallSensors,
         dutyCyle,
-        focAngle,
-        humanPower,
-        odometer;
+        focAngle;
 
         public String getName() {
             switch (this) {
@@ -43,45 +45,48 @@ public class Variable {
                     return MyApp.getInstance().getResources().getStringArray(R.array.variables)[0];
                 case batteryCurrent:
                     return MyApp.getInstance().getResources().getStringArray(R.array.variables)[1];
-                case batterySOC:
+                case batteryResistanceEstimated:
                     return MyApp.getInstance().getResources().getStringArray(R.array.variables)[2];
-                case batteryUsedEnergy:
+                case batterySOC:
                     return MyApp.getInstance().getResources().getStringArray(R.array.variables)[3];
-                case batteryADCCurrent:
+                case batteryUsedEnergy:
                     return MyApp.getInstance().getResources().getStringArray(R.array.variables)[4];
-                case motorCurrent:
+                case batteryADCCurrent:
                     return MyApp.getInstance().getResources().getStringArray(R.array.variables)[5];
-                case motorTemperature:
+                case motorPower:
                     return MyApp.getInstance().getResources().getStringArray(R.array.variables)[6];
-                case motorSpeed:
+                case motorCurrent:
                     return MyApp.getInstance().getResources().getStringArray(R.array.variables)[7];
-                case speed:
+                case motorTemperature:
                     return MyApp.getInstance().getResources().getStringArray(R.array.variables)[8];
-                case hallSensors:
+                case motorSpeed:
                     return MyApp.getInstance().getResources().getStringArray(R.array.variables)[9];
-                case pedalSide:
-                    return MyApp.getInstance().getResources().getStringArray(R.array.variables)[10];
-                case throttle:
-                    return MyApp.getInstance().getResources().getStringArray(R.array.variables)[11];
-                case throttleADC:
-                    return MyApp.getInstance().getResources().getStringArray(R.array.variables)[12];
-                case torqueSensorADC:
-                    return MyApp.getInstance().getResources().getStringArray(R.array.variables)[13];
-                case pedalWeight:
-                    return MyApp.getInstance().getResources().getStringArray(R.array.variables)[14];
-                case pedalWeightWithOffset:
-                    return MyApp.getInstance().getResources().getStringArray(R.array.variables)[15];
-                case pedalCadence:
-                    return MyApp.getInstance().getResources().getStringArray(R.array.variables)[16];
-                case dutyCyle:
-                    return MyApp.getInstance().getResources().getStringArray(R.array.variables)[17];
-                case focAngle:
-                    return MyApp.getInstance().getResources().getStringArray(R.array.variables)[18];
                 case humanPower:
-                    return MyApp.getInstance().getResources().getStringArray(R.array.variables)[19];
+                    return MyApp.getInstance().getResources().getStringArray(R.array.variables)[10];
+                case pedalCadence:
+                    return MyApp.getInstance().getResources().getStringArray(R.array.variables)[11];
+                case pedalSide:
+                    return MyApp.getInstance().getResources().getStringArray(R.array.variables)[12];
+                case pedalWeight:
+                    return MyApp.getInstance().getResources().getStringArray(R.array.variables)[13];
+                case pedalWeightWithOffset:
+                    return MyApp.getInstance().getResources().getStringArray(R.array.variables)[14];
+                case torqueSensorADC:
+                    return MyApp.getInstance().getResources().getStringArray(R.array.variables)[15];
+                case speed:
+                    return MyApp.getInstance().getResources().getStringArray(R.array.variables)[16];
                 case odometer:
+                    return MyApp.getInstance().getResources().getStringArray(R.array.variables)[17];
+                case throttle:
+                    return MyApp.getInstance().getResources().getStringArray(R.array.variables)[18];
+                case throttleADC:
+                    return MyApp.getInstance().getResources().getStringArray(R.array.variables)[19];
+                case hallSensors:
                     return MyApp.getInstance().getResources().getStringArray(R.array.variables)[20];
-
+                case dutyCyle:
+                    return MyApp.getInstance().getResources().getStringArray(R.array.variables)[21];
+                case focAngle:
+                    return MyApp.getInstance().getResources().getStringArray(R.array.variables)[22];
             }
             return "";
         }
@@ -93,43 +98,47 @@ public class Variable {
                 case 1:
                     return batteryCurrent;
                 case 2:
-                    return batterySOC;
+                    return batteryResistanceEstimated;
                 case 3:
-                    return batteryUsedEnergy;
+                    return batterySOC;
                 case 4:
-                    return batteryADCCurrent;
+                    return batteryUsedEnergy;
                 case 5:
-                    return motorCurrent;
+                    return batteryADCCurrent;
                 case 6:
-                    return motorTemperature;
+                    return motorPower;
                 case 7:
-                    return motorSpeed;
+                    return motorCurrent;
                 case 8:
-                    return speed;
+                    return motorTemperature;
                 case 9:
-                    return hallSensors;
+                    return motorSpeed;
                 case 10:
-                    return pedalSide;
-                case 11:
-                    return throttle;
-                case 12:
-                    return throttleADC;
-                case 13:
-                    return torqueSensorADC;
-                case 14:
-                    return pedalWeight;
-                case 15:
-                    return pedalWeightWithOffset;
-                case 16:
-                    return pedalCadence;
-                case 17:
-                    return dutyCyle;
-                case 18:
-                    return focAngle;
-                case 19:
                     return humanPower;
-                case 20:
+                case 11:
+                    return pedalCadence;
+                case 12:
+                    return pedalSide;
+                case 13:
+                    return pedalWeight;
+                case 14:
+                    return pedalWeightWithOffset;
+                case 15:
+                    return torqueSensorADC;
+                case 16:
+                    return speed;
+                case 17:
                     return odometer;
+                case 18:
+                    return throttle;
+                case 19:
+                    return throttleADC;
+                case 20:
+                    return hallSensors;
+                case 21:
+                    return dutyCyle;
+                case 22:
+                    return focAngle;
             }
             return null;
         }

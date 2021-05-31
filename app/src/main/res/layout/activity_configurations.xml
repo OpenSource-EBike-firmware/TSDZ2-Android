@@ -2487,157 +2487,157 @@
                         tools:text="0.005" />
                 </LinearLayout>
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_horizontal"
-                    android:layout_marginTop="30dp"
-                    android:textStyle="bold"
-                    android:textSize="18sp"
-                    android:text="@string/street_mode" />
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:gravity="center_horizontal"-->
+<!--                    android:layout_marginTop="30dp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textSize="18sp"-->
+<!--                    android:text="@string/street_mode" />-->
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_margin="5dp">
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:layout_margin="5dp">-->
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:textSize="16sp"
-                        android:text="@string/street_mode_feature" />
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_gravity="center_vertical"-->
+<!--                        android:textSize="16sp"-->
+<!--                        android:text="@string/street_mode_feature" />-->
 
-                    <Spinner
-                        android:id="@+id/streetModeFeatureSpinner"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:drawSelectorOnTop="true"
-                        android:entries="@array/disable_enable"
-                        android:background="@android:drawable/btn_dropdown"
-                        android:gravity="end"
-                        android:layout_marginEnd="5dp"
-                        android:layout_gravity="center_vertical"
-                        android:layout_marginStart="5dp"
-                        android:ems="2"
-                        android:textSize="16sp"
-                        android:spinnerMode="dropdown"/>
-                </LinearLayout>
+<!--                    <Spinner-->
+<!--                        android:id="@+id/streetModeFeatureSpinner"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:drawSelectorOnTop="true"-->
+<!--                        android:entries="@array/disable_enable"-->
+<!--                        android:background="@android:drawable/btn_dropdown"-->
+<!--                        android:gravity="end"-->
+<!--                        android:layout_marginEnd="5dp"-->
+<!--                        android:layout_gravity="center_vertical"-->
+<!--                        android:layout_marginStart="5dp"-->
+<!--                        android:ems="2"-->
+<!--                        android:textSize="16sp"-->
+<!--                        android:spinnerMode="dropdown"/>-->
+<!--                </LinearLayout>-->
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_margin="5dp">
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:layout_margin="5dp">-->
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:textSize="16sp"
-                        android:text="@string/street_mode_enable_at_startup" />
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_gravity="center_vertical"-->
+<!--                        android:textSize="16sp"-->
+<!--                        android:text="@string/street_mode_enable_at_startup" />-->
 
-                    <Spinner
-                        android:id="@+id/streetModeEnableAtStartupSpinner"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:drawSelectorOnTop="true"
-                        android:entries="@array/no_yes"
-                        android:background="@android:drawable/btn_dropdown"
-                        android:gravity="end"
-                        android:layout_marginEnd="5dp"
-                        android:layout_gravity="center_vertical"
-                        android:layout_marginStart="5dp"
-                        android:ems="2"
-                        android:textSize="16sp"
-                        android:spinnerMode="dropdown"/>
-                </LinearLayout>
+<!--                    <Spinner-->
+<!--                        android:id="@+id/streetModeEnableAtStartupSpinner"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:drawSelectorOnTop="true"-->
+<!--                        android:entries="@array/no_yes"-->
+<!--                        android:background="@android:drawable/btn_dropdown"-->
+<!--                        android:gravity="end"-->
+<!--                        android:layout_marginEnd="5dp"-->
+<!--                        android:layout_gravity="center_vertical"-->
+<!--                        android:layout_marginStart="5dp"-->
+<!--                        android:ems="2"-->
+<!--                        android:textSize="16sp"-->
+<!--                        android:spinnerMode="dropdown"/>-->
+<!--                </LinearLayout>-->
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_margin="5dp">
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:layout_margin="5dp">-->
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:textSize="16sp"
-                        android:text="@string/street_mode_speed_limit" />
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_gravity="center_vertical"-->
+<!--                        android:textSize="16sp"-->
+<!--                        android:text="@string/street_mode_speed_limit" />-->
 
-                    <EditText
-                        android:id="@+id/streetModeSpeedLimitET"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="end"
-                        android:layout_marginEnd="5dp"
-                        android:layout_gravity="center_vertical"
-                        android:layout_marginStart="5dp"
-                        tools:text="25"
-                        android:textSize="16sp"
-                        android:ems="2"
-                        android:text="@{String.valueOf(cfg.ui8_street_mode_speed_limit)}"
-                        android:inputType="number" />
-                </LinearLayout>
+<!--                    <EditText-->
+<!--                        android:id="@+id/streetModeSpeedLimitET"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:gravity="end"-->
+<!--                        android:layout_marginEnd="5dp"-->
+<!--                        android:layout_gravity="center_vertical"-->
+<!--                        android:layout_marginStart="5dp"-->
+<!--                        tools:text="25"-->
+<!--                        android:textSize="16sp"-->
+<!--                        android:ems="2"-->
+<!--                        android:text="@{String.valueOf(cfg.ui8_street_mode_speed_limit)}"-->
+<!--                        android:inputType="number" />-->
+<!--                </LinearLayout>-->
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_margin="5dp">
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:layout_margin="5dp">-->
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:textSize="16sp"
-                        android:text="@string/street_mode_motor_power_limit" />
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_gravity="center_vertical"-->
+<!--                        android:textSize="16sp"-->
+<!--                        android:text="@string/street_mode_motor_power_limit" />-->
 
-                    <EditText
-                        android:id="@+id/streetModeMotorPowerLimitET"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="end"
-                        android:layout_marginEnd="5dp"
-                        android:layout_gravity="center_vertical"
-                        android:layout_marginStart="5dp"
-                        tools:text="500"
-                        android:textSize="16sp"
-                        android:ems="2"
-                        android:text="@{String.valueOf(cfg.street_mode_power_limit)}"
-                        android:inputType="number" />
-                </LinearLayout>
+<!--                    <EditText-->
+<!--                        android:id="@+id/streetModeMotorPowerLimitET"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:gravity="end"-->
+<!--                        android:layout_marginEnd="5dp"-->
+<!--                        android:layout_gravity="center_vertical"-->
+<!--                        android:layout_marginStart="5dp"-->
+<!--                        tools:text="500"-->
+<!--                        android:textSize="16sp"-->
+<!--                        android:ems="2"-->
+<!--                        android:text="@{String.valueOf(cfg.street_mode_power_limit)}"-->
+<!--                        android:inputType="number" />-->
+<!--                </LinearLayout>-->
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_margin="5dp">
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:layout_margin="5dp">-->
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:textSize="16sp"
-                        android:text="@string/street_mode_throttle_enable" />
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_gravity="center_vertical"-->
+<!--                        android:textSize="16sp"-->
+<!--                        android:text="@string/street_mode_throttle_enable" />-->
 
-                    <Spinner
-                        android:id="@+id/streetModeThrottleEnableSpinner"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:drawSelectorOnTop="true"
-                        android:entries="@array/no_yes"
-                        android:background="@android:drawable/btn_dropdown"
-                        android:gravity="end"
-                        android:layout_marginEnd="5dp"
-                        android:layout_gravity="center_vertical"
-                        android:layout_marginStart="5dp"
-                        android:ems="2"
-                        android:textSize="16sp"
-                        android:spinnerMode="dropdown"/>
-                </LinearLayout>
+<!--                    <Spinner-->
+<!--                        android:id="@+id/streetModeThrottleEnableSpinner"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:drawSelectorOnTop="true"-->
+<!--                        android:entries="@array/no_yes"-->
+<!--                        android:background="@android:drawable/btn_dropdown"-->
+<!--                        android:gravity="end"-->
+<!--                        android:layout_marginEnd="5dp"-->
+<!--                        android:layout_gravity="center_vertical"-->
+<!--                        android:layout_marginStart="5dp"-->
+<!--                        android:ems="2"-->
+<!--                        android:textSize="16sp"-->
+<!--                        android:spinnerMode="dropdown"/>-->
+<!--                </LinearLayout>-->
 
                 <TextView
                     android:layout_width="match_parent"

@@ -350,25 +350,27 @@
     <string-array name="variables">
         <item>Battery voltage</item>
         <item>Battery current</item>
+        <item>Battery resistance est.</item>
         <item>Battery SOC</item>
         <item>Battery used energy</item>
         <item>ADC battery current</item>
+        <item>Motor power</item>
         <item>Motor current</item>
         <item>Motor temperature</item>
         <item>Motor speed</item>
-        <item>Speed</item>
-        <item>Hall sensors</item>
+        <item>Human power</item>
+        <item>Pedal cadence</item>
         <item>Pedal side</item>
+        <item>Pedal weight</item>
+        <item>Pedal weight w/ offset</item>
+        <item>ADC torque sensor</item>
+        <item>Speed</item>
+        <item>Odometer</item>
         <item>Throttle</item>
         <item>ADC throttle</item>
-        <item>ADC torque sensor</item>
-        <item>Pedal weight w/ offset</item>
-        <item>Pedal weight</item>
-        <item>Pedal cadence</item>
+        <item>Hall sensors</item>
         <item>Duty cycle</item>
         <item>FOC angle</item>
-        <item>Human power</item>
-        <item>Odometer</item>
     </string-array>
 
     <!--  Chart Values -->

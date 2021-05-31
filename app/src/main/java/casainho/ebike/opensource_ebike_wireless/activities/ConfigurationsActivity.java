@@ -530,23 +530,24 @@ public class ConfigurationsActivity extends AppCompatActivity {
         }
         cfg.ui16_startup_motor_power_boost_factor[6] = (int) (valFloat * 1000);
 
-        cfg.ui8_street_mode_enabled = binding.streetModeFeatureSpinner.getSelectedItemPosition();
-
-        cfg.ui8_street_mode_enabled_on_startup = binding.streetModeEnableAtStartupSpinner.getSelectedItemPosition();
-
-        if ((val = checkRange(binding.streetModeSpeedLimitET, 1, 99)) == null) {
-            showDialog(getString(R.string.street_mode_speed_limit), getString(R.string.range_error, 1, 99));
-            return;
-        }
-        cfg.ui8_street_mode_speed_limit = val;
-
-        if ((val = checkRange(binding.streetModeMotorPowerLimitET, 25, 2500)) == null) {
-            showDialog(getString(R.string.street_mode_motor_power_limit), getString(R.string.range_error, 25, 2500));
-            return;
-        }
-        cfg.ui8_street_mode_power_limit_div25 = (val / 25);
-
-        cfg.ui8_street_mode_throttle_enabled = binding.streetModeThrottleEnableSpinner.getSelectedItemPosition();
+cfg.ui8_street_mode_enabled = 0; // TODO: force disable, as currently there is no way to enable or disable it
+//        cfg.ui8_street_mode_enabled = binding.streetModeFeatureSpinner.getSelectedItemPosition();
+//
+//        cfg.ui8_street_mode_enabled_on_startup = binding.streetModeEnableAtStartupSpinner.getSelectedItemPosition();
+//
+//        if ((val = checkRange(binding.streetModeSpeedLimitET, 1, 99)) == null) {
+//            showDialog(getString(R.string.street_mode_speed_limit), getString(R.string.range_error, 1, 99));
+//            return;
+//        }
+//        cfg.ui8_street_mode_speed_limit = val;
+//
+//        if ((val = checkRange(binding.streetModeMotorPowerLimitET, 25, 2500)) == null) {
+//            showDialog(getString(R.string.street_mode_motor_power_limit), getString(R.string.range_error, 25, 2500));
+//            return;
+//        }
+//        cfg.ui8_street_mode_power_limit_div25 = (val / 25);
+//
+//        cfg.ui8_street_mode_throttle_enabled = binding.streetModeThrottleEnableSpinner.getSelectedItemPosition();
 
         if ((valFloat = checkRange(binding.odometerET, 0.0f, 429496729.0f)) == null) {
             showDialog(getString(R.string.odometer), getString(R.string.range_error_float, 0.0f, 429496729.0f));
@@ -655,17 +656,17 @@ public class ConfigurationsActivity extends AppCompatActivity {
                     if (itens <= (res.getStringArray(R.array.no_yes)).length)
                         binding.startupBoostLimitToMaxPowerSpinner.setSelection(itens);
 
-                    itens = cfg.ui8_street_mode_enabled;
-                    if (itens <= (res.getStringArray(R.array.disable_enable)).length)
-                        binding.streetModeFeatureSpinner.setSelection(itens);
-
-                    itens = cfg.ui8_street_mode_enabled_on_startup;
-                    if (itens <= (res.getStringArray(R.array.no_yes)).length)
-                        binding.streetModeEnableAtStartupSpinner.setSelection(itens);
-
-                    itens = cfg.ui8_street_mode_throttle_enabled;
-                    if (itens <= (res.getStringArray(R.array.no_yes)).length)
-                        binding.streetModeThrottleEnableSpinner.setSelection(itens);
+//                    itens = cfg.ui8_street_mode_enabled;
+//                    if (itens <= (res.getStringArray(R.array.disable_enable)).length)
+//                        binding.streetModeFeatureSpinner.setSelection(itens);
+//
+//                    itens = cfg.ui8_street_mode_enabled_on_startup;
+//                    if (itens <= (res.getStringArray(R.array.no_yes)).length)
+//                        binding.streetModeEnableAtStartupSpinner.setSelection(itens);
+//
+//                    itens = cfg.ui8_street_mode_throttle_enabled;
+//                    if (itens <= (res.getStringArray(R.array.no_yes)).length)
+//                        binding.streetModeThrottleEnableSpinner.setSelection(itens);
                 }
                 break;
 

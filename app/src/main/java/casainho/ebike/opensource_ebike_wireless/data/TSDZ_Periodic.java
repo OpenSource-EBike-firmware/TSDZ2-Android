@@ -15,6 +15,7 @@ public class TSDZ_Periodic {
     public int assistLevelTarget;
     public float batteryVoltage;
     public float batteryCurrent;
+    public float batteryResistanceEstimated;
     public float wheelSpeed;
     public int braking;
     public int light;
@@ -50,9 +51,9 @@ public class TSDZ_Periodic {
             return false;
         }
 
-        this.batteryVoltage = (((data[1] & 255) << 8) + (data[0] & 255)) / 10;
-        this.batteryCurrent = (data[2] & 255) / 5;
-        this.wheelSpeed = (((data[4] & 255) << 8) + (data[3] & 255)) / 10;
+        this.batteryVoltage = (((data[1] & 255) << 8) + (data[0] & 255)) / (float) 10;
+        this.batteryCurrent = (data[2] & 255) / (float) 5;
+        this.wheelSpeed = (((data[4] & 255) << 8) + (data[3] & 255)) / (float) 10;
         this.braking = ((data[5] & 255) & 1);
         this.light = (((data[5] & 255) >> 1) & 1);
         this.motorHallSensors = (data[6] & 255);
@@ -68,14 +69,16 @@ public class TSDZ_Periodic {
         this.motorSpeedERPS = ((data[18] & 255) << 8) + ((data[17] & 255));
         this.FOCAngle = (data[19] & 255);
         this.errorStates = (data[20] & 255);
-        this.motorCurrent = (data[21] & 255) / 5;
+        this.motorCurrent = (data[21] & 255) / (float) 5;
         this.ADCBatteryCurrent = ((data[23] & 255) << 8) + ((data[22] & 255));
         this.assistLevel = (data[24] & 255);
         this.humanPedalPower = ((data[26] & 255) << 8) + ((data[25] & 255));
         this.batterySOC = (data[27] & 255);
         this.odometer = (((data[31] & 255) << 8) + ((data[30] & 255) << 8) + ((data[29] & 255) << 8) + (data[28] & 255));
-        this.wattsHour = (((data[31] & 255) << 8) + ((data[30] & 255) << 8) + ((data[29] & 255) << 8) + (data[28] & 255)) / 10;
+        this.wattsHour = (((data[31] & 255) << 8) + ((data[30] & 255) << 8) + ((data[29] & 255) << 8) + (data[28] & 255)) / (float) 10;
         this.motorState = (data[32] & 255);
+        this.motorPower = ((data[34] & 255) << 8) + ((data[33] & 255));
+        this.batteryResistanceEstimated = (((data[36] & 255) << 8) + (data[35] & 255)) / (float) 1000;
 
         return true;
     }
